@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,7 +17,8 @@
             android:layout_width="53dp"
             android:layout_height="23dp"
             android:layout_marginStart="16dp"
-            android:text="Salary"
+            tools:text="Salary"
+            android:fontFamily="@font/teachers"
             app:layout_constraintBottom_toBottomOf="@+id/tvExpense1"
             app:layout_constraintStart_toEndOf="@+id/tvExpense1"
             app:layout_constraintTop_toTopOf="@+id/tvExpense1"
@@ -38,6 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kes 40,000"
+            android:fontFamily="@font/teachers"
             app:layout_constraintBottom_toBottomOf="@+id/tvExpense1"
             app:layout_constraintEnd_toEndOf="@+id/tvExpenseName"
             app:layout_constraintHorizontal_bias="0.0"
@@ -50,6 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1 July 2024"
+            android:fontFamily="@font/teachers"
             app:layout_constraintBottom_toBottomOf="@+id/tvExpensePrice"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.723"
@@ -63,6 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:text="Rent"
+            android:fontFamily="@font/teachers"
             app:layout_constraintBottom_toBottomOf="@+id/tvExpense2"
             app:layout_constraintStart_toEndOf="@+id/tvExpense2"
             app:layout_constraintTop_toTopOf="@+id/tvExpense2"
@@ -72,16 +76,18 @@
             android:id="@+id/tvExpense2"
             android:layout_width="32dp"
             android:layout_height="33dp"
+            android:layout_marginStart="28dp"
             android:layout_marginTop="100dp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvExpense1"
-            app:srcCompat="@drawable/expense_trx"
-            tools:layout_editor_absoluteX="37dp" />
+            app:srcCompat="@drawable/expense_trx" />
 
         <TextView
             android:id="@+id/tvExpensePrice2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kes 16000"
+            android:fontFamily="@font/teachers"
             app:layout_constraintEnd_toEndOf="@+id/tvExpenseName2"
             app:layout_constraintStart_toStartOf="@+id/tvExpenseName2"
             app:layout_constraintTop_toBottomOf="@+id/tvExpenseName2" />
@@ -92,6 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="108dp"
             android:text="2 July 2024"
+            android:fontFamily="@font/teachers"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.671"
             app:layout_constraintStart_toEndOf="@+id/tvExpensePrice2"

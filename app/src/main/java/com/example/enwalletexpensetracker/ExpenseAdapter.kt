@@ -16,10 +16,10 @@ val itemView=LayoutInflater.from(parent.context).inflate(R.layout.expense_tracke
 
     override fun onBindViewHolder(holder: ExpenseViewHolder, position: Int) {
        val trackExpense=expense_list[position]
-        holder.tvExpense=trackExpense.name
-        holder.tvExpenseName=trackExpense.expensePhoto
-        holder.tvDate=trackExpense.date
-        holder.tvPrice=trackExpense.expensesPrice
+        holder.tvExpense.text=trackExpense.name
+        holder.tvExpenseName.text=trackExpense.expensePhoto
+        holder.tvDate.text=trackExpense.date
+        holder.tvPrice.text=trackExpense.expensesPrice
     }
 
     override fun getItemCount(): Int {
