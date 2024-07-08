@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="48dp">
+        <TextView
+            android:id="@+id/tvExpenseName"
+            android:layout_width="53dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:text="Salary"
+            app:layout_constraintBottom_toBottomOf="@+id/tvExpense1"
+            app:layout_constraintStart_toEndOf="@+id/tvExpense1"
+            app:layout_constraintTop_toTopOf="@+id/tvExpense1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/tvExpense1"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/income_trx" />
+
+        <TextView
+            android:id="@+id/tvExpensePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kes 40,000"
+            app:layout_constraintBottom_toBottomOf="@+id/tvExpense1"
+            app:layout_constraintEnd_toEndOf="@+id/tvExpenseName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvExpenseName"
+            app:layout_constraintTop_toBottomOf="@+id/tvExpenseName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvExpenseDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 July 2024"
+            app:layout_constraintBottom_toBottomOf="@+id/tvExpensePrice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.723"
+            app:layout_constraintStart_toEndOf="@+id/tvExpensePrice"
+            app:layout_constraintTop_toTopOf="@+id/tvExpenseName"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvExpenseName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Rent"
+            app:layout_constraintBottom_toBottomOf="@+id/tvExpense2"
+            app:layout_constraintStart_toEndOf="@+id/tvExpense2"
+            app:layout_constraintTop_toTopOf="@+id/tvExpense2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/tvExpense2"
+            android:layout_width="32dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvExpense1"
+            app:srcCompat="@drawable/expense_trx"
+            tools:layout_editor_absoluteX="37dp" />
+
+        <TextView
+            android:id="@+id/tvExpensePrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kes 16000"
+            app:layout_constraintEnd_toEndOf="@+id/tvExpenseName2"
+            app:layout_constraintStart_toStartOf="@+id/tvExpenseName2"
+            app:layout_constraintTop_toBottomOf="@+id/tvExpenseName2" />
+
+        <TextView
+            android:id="@+id/tvExpenseDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:text="2 July 2024"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.671"
+            app:layout_constraintStart_toEndOf="@+id/tvExpensePrice2"
+            app:layout_constraintTop_toBottomOf="@+id/tvExpenseDate1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
